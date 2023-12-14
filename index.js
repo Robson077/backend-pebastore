@@ -10,6 +10,8 @@ app.use(cors())
 
 app.get("/content", (req, res) => {
     res.json(db)
+
+    console.log(db)
 })
 
 app.get("/detalhe/:id", (req, res) => {
